@@ -35,9 +35,7 @@ public class ZhuCeActivity extends AppCompatActivity implements RegView {
                 regPresenter.abc(phone.getText().toString(),pwd.getText().toString());
             }
         });
-
     }
-
     @Override
     public void showReg(final RegBean regBean) {
         runOnUiThread(new Runnable() {

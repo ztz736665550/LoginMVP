@@ -42,17 +42,20 @@ public class MainActivity extends AppCompatActivity implements LoginView {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,ZhuCeActivity.class);
-
                 startActivity(intent);
             }
         });
     }
+    //登录成功返回的方法
     @Override
     public void viewData(final LoginBean bean) {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 Toast.makeText(MainActivity.this,bean.getMsg(),Toast.LENGTH_SHORT).show();
+                /*Intent intent = new Intent(MainActivity.this,xxxxxx.class);
+
+                startActivity(intent);*/
             }
         });
     }
